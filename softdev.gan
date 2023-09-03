@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-08-27" view-index="0" gantt-divider-location="296" resource-divider-location="300" version="3.3.3292" locale="en_AU">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Name" width="138" order="0"/>
+        <field id="tpd4" name="Begin date" width="68" order="1"/>
+        <field id="tpd5" name="End date" width="74" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#666666 #000000 #66ccff #00ea73 #66ff99 #99ff99 #cc0033 #ff286a #dc4646 #da0f0f]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="89e5fcada7e04fca90733e79dfc9a9c8" name="Analysis" color="#000000" meeting="false" start="2023-04-24" duration="17" complete="100" thirdDate="2022-07-08" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <notes><![CDATA[Beginning of the analysis stage
+Need to:
+- Create and finish gantt
+- Finish SRS
+- Finish diagrams]]></notes>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+            <task id="27" uid="8ef30a7ed0994b018a8a14928325af44" name="Data Collection" color="#000000" meeting="false" start="2023-04-24" duration="10" complete="100" thirdDate="2023-04-25" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <notes><![CDATA[Need to find client, create an interview and interview the client]]></notes>
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+                <task id="43" uid="cdaf79a82b6947afa0b1ad3c8ed97ec1" name="Find client" color="#6633ff" meeting="false" start="2023-04-24" duration="7" complete="100" thirdDate="2023-04-24" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Client is my brother
+Client wants a workout planner]]></notes>
+                    <depend id="29" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="29" uid="48d796da33a44bb39ff3454773cc2202" name="Create interview questions" color="#6633ff" meeting="false" start="2023-05-01" duration="1" complete="100" thirdDate="2023-05-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Ask client about functional and non functional requirements]]></notes>
+                    <depend id="28" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="28" uid="0d86aa4e18f94f0db45ff098fe9caca9" name="Interview Client" color="#6633ff" meeting="false" start="2023-05-02" duration="2" complete="100" thirdDate="2023-04-20" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Record interview with client
+]]></notes>
+                    <depend id="7" type="2" difference="0" hardness="Strong"/>
+                    <depend id="8" type="2" difference="0" hardness="Strong"/>
+                    <depend id="9" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="30" uid="d9af6a06617a469384e96f72b59d66d3" name="Create gantt chart" meeting="false" start="2023-05-04" duration="6" complete="100" thirdDate="2023-05-03" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <notes><![CDATA[Create dependencies, tasks and milestones]]></notes>
+                <task id="31" uid="a8d4068213024ef5ae2c5d941e67567e" name="Create required tasks" color="#990099" meeting="false" start="2023-05-04" duration="2" complete="100" thirdDate="2023-04-17" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished required tasks]]></notes>
+                    <depend id="32" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="32" uid="2b492715ce45474c8ccd53cc80f45b34" name="Create dependencies" color="#990099" meeting="false" start="2023-05-06" duration="2" complete="100" thirdDate="2023-04-07" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished dependencies]]></notes>
+                    <depend id="33" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="33" uid="7ed76ef9fea343b098faa1b0f4f85a30" name="Create milestones" color="#990099" meeting="false" start="2023-05-08" duration="2" complete="100" thirdDate="2023-05-11" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished milestones
+]]></notes>
+                </task>
+            </task>
+            <task id="59" uid="9f46f18a220c41159c184344ff65ed2a" name="System requirement specifications" meeting="false" start="2023-05-04" duration="5" complete="100" thirdDate="2023-05-05" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <notes><![CDATA[Need to:
+- Write functional and non functional requirements
+- Write constraints
+- Write scope
+]]></notes>
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+                <task id="8" uid="c89e8e51a4a443a3ae590423aaa46197" name="Figure out solution requirements" color="#9966ff" meeting="false" start="2023-05-04" duration="2" complete="100" thirdDate="2022-07-20" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished]]></notes>
+                    <depend id="51" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="7" uid="61c107ca25014f79866ae9e0873acce8" name="Figure out solution constraints" color="#9966ff" meeting="false" start="2023-05-04" duration="2" complete="100" thirdDate="2022-07-27" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished]]></notes>
+                    <depend id="52" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="9" uid="4da8d89addd744cd8c0a0385da33949a" name="Figure out the scope of the solution" color="#9966ff" meeting="false" start="2023-05-04" duration="2" complete="100" thirdDate="2022-07-27" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished]]></notes>
+                    <depend id="53" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="51" uid="a5e6d283518d42c592461e1f587cb10d" name="Write requirements" color="#9966ff" meeting="false" start="2023-05-06" duration="3" complete="100" thirdDate="2023-04-25" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished writing requirements]]></notes>
+                </task>
+                <task id="52" uid="f01fef15debd47f9804b6863194d2741" name="Write constraints" color="#9966ff" meeting="false" start="2023-05-06" duration="3" complete="100" thirdDate="2023-04-19" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished writing constraints]]></notes>
+                </task>
+                <task id="53" uid="a03933f9245e437ca30041936bed3a9b" name="Write scope" color="#9966ff" meeting="false" start="2023-05-06" duration="3" complete="100" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished writing scope]]></notes>
+                </task>
+            </task>
+            <task id="12" uid="109777da9a7f4687b2641ba6cb95c27c" name="Finalise SRS" color="#000000" meeting="true" start="2023-05-09" duration="0" complete="0" thirdDate="2022-07-19" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <notes><![CDATA[Finished SRS]]></notes>
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="36" uid="58920a32e7b34f5ba85963a8a0b429aa" name="Creating diagrams" meeting="false" start="2023-05-09" duration="2" complete="100" thirdDate="2023-05-07" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <notes><![CDATA[Create use case diagram, data flow diagram and context diagram]]></notes>
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+                <task id="35" uid="2bbbd5021c5f4925a0387464331b54e6" name="Create use case diagram" color="#cc66ff" meeting="false" start="2023-05-09" duration="1" complete="100" thirdDate="2023-05-01" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished use case diagram]]></notes>
+                    <depend id="37" type="2" difference="0" hardness="Strong"/>
+                    <depend id="39" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="39" uid="418b6e8bb2cd4e16ba90d186adf42a1d" name="Create data flow diagram" color="#cc66ff" meeting="false" start="2023-05-10" duration="1" complete="100" thirdDate="2023-05-17" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished data flow diagram]]></notes>
+                </task>
+                <task id="37" uid="c7a8c5fbc937450f9fe3307ef7f578eb" name="Create context diagram" color="#cc66ff" meeting="false" start="2023-05-10" duration="1" complete="100" thirdDate="2023-05-17" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <notes><![CDATA[Finished context diagram]]></notes>
+                </task>
+            </task>
+            <task id="38" uid="635205da4021440da17d3e4193384c58" name="Finalise diagrams" color="#000000" meeting="true" start="2023-05-11" duration="0" complete="0" thirdDate="2023-05-18" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <notes><![CDATA[Diagrams complete]]></notes>
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="40" uid="34ed78c0ca3c487eb8c915174e0826f1" name="Finalise all of analysis stage" color="#000000" meeting="true" start="2023-05-11" duration="0" complete="0" thirdDate="2023-05-19" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <notes><![CDATA[Analysis complete]]></notes>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" uid="a044b6a5853346f6ab13bdbb6407b788" name="Design" color="#000000" meeting="false" start="2023-05-11" duration="30" complete="100" thirdDate="2022-07-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <notes><![CDATA[Need to finish design ideas, and evaluation criteria]]></notes>
+            <depend id="60" type="2" difference="0" hardness="Strong"/>
+            <task id="34" uid="8e6ae90a4a1f4dd98abe106ffe6cf5ba" name="Create design ideas" color="#000000" meeting="false" start="2023-05-11" duration="10" complete="100" thirdDate="2023-05-24" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <notes><![CDATA[Create:
+- Mind map
+- Three mock ups
+- Data dictionary
+- PMI Table
+- Psuedocode]]></notes>
+                <task id="50" uid="bb917c75b7014bbfbe713985ee6ea44e" name="Create mind map" color="#ff0033" meeting="false" start="2023-05-11" duration="3" complete="100" thirdDate="2023-05-16" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                    <depend id="47" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="47" uid="22645bec8f5f42a481af6de75b98b75f" name="Create two mock up interfaces" color="#ff0033" meeting="false" start="2023-05-14" duration="4" complete="100" thirdDate="2023-05-24" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                    <depend id="46" type="2" difference="0" hardness="Strong"/>
+                    <depend id="48" type="2" difference="0" hardness="Strong"/>
+                    <depend id="49" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="48" uid="72dad430684044a88e4a424fd840f208" name="Create data dictionary" color="#ff0033" meeting="false" start="2023-05-18" duration="1" complete="100" thirdDate="2023-05-24" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="46" uid="7234a3253603402d8ae1e6b736e5542f" name="Create PMI table" color="#ff0033" meeting="false" start="2023-05-18" duration="1" complete="100" thirdDate="2023-05-24" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="49" uid="5d41c4924010444386269746e12aebc6" name="Create psuedocode" color="#ff0033" meeting="false" start="2023-05-18" duration="3" complete="100" thirdDate="2023-05-24" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="19" uid="3366e931429d4504a45b799c1d95e831" name="Evaluation criteria" color="#000000" meeting="false" start="2023-06-02" duration="8" complete="100" thirdDate="2022-07-22" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false">
+                <task id="42" uid="7ca63b988557425a9197dc67554ba14b" name="Evaluate solution efficiency" color="#cc0033" meeting="false" start="2023-06-02" duration="3" complete="100" thirdDate="2023-05-16" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                    <depend id="41" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="41" uid="bae3dc286e4b4b3cb020b140452e2d4c" name="Evaluate solution effectiveness" color="#cc0033" meeting="false" start="2023-06-05" duration="5" complete="100" thirdDate="2023-05-16" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+            </task>
+        </task>
+        <task id="60" uid="5415439085e942eb99e037b20a25abc0" name="Finish Design stage" color="#000000" meeting="true" start="2023-06-10" duration="0" complete="0" thirdDate="2023-05-24" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="22" uid="8716b29928974907bd3923b89f789e8c" name="Development" color="#000000" meeting="false" start="2023-06-21" duration="9" complete="0" thirdDate="2022-07-28" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <depend id="61" type="2" difference="0" hardness="Strong"/>
+            <task id="21" uid="7bb3584167824772838c6c68bc4b5d0f" name="Coding" color="#000000" meeting="false" start="2023-06-21" duration="6" complete="0" thirdDate="2022-07-28" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="24" type="2" difference="0" hardness="Strong"/>
+                <task id="57" uid="e1425f6e749d4c02bde3ca6cde160bb9" name="Create GUI" color="#99ff99" meeting="false" start="2023-06-21" duration="3" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false">
+                    <depend id="58" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="58" uid="6fa9f44314014de69c7c976bd12b0af8" name="Create functions" color="#99ff99" meeting="false" start="2023-06-24" duration="3" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
+            </task>
+            <task id="24" uid="e7da0d6103c34d10a7495518e117c089" name="Validation" color="#00ea73" meeting="false" start="2023-06-27" duration="1" complete="0" thirdDate="2022-08-03" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" uid="9d5234b0c3ee408fb18ce8fa55d1b987" name="Testing" color="#00ea73" meeting="false" start="2023-06-28" duration="1" complete="0" thirdDate="2022-08-02" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" uid="f95381d1819348df9a528b8d1637920e" name="Documentation" color="#00ea73" meeting="false" start="2023-06-29" duration="1" complete="0" thirdDate="2022-08-02" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        </task>
+        <task id="61" uid="b67512eccbf448c4a168f3563e8cee56" name="Development stage complete" color="#000000" meeting="true" start="2023-06-30" duration="0" complete="0" thirdDate="2023-06-02" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false">
+            <depend id="56" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="56" uid="bdbc0770609d4b359c40b10a79f6ba28" name="Evaluation" meeting="false" start="2023-06-30" duration="4" complete="0" thirdDate="2023-06-03" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <task id="54" uid="1d2e49086f4541a1a2100b9bdc57cd0f" name="Solution evaluation" color="#66ccff" meeting="false" start="2023-06-30" duration="2" complete="0" thirdDate="2023-05-31" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="55" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="55" uid="4c1e6990d12647cfb152985f60c17949" name="Evaluation strategy" color="#66ccff" meeting="false" start="2023-07-02" duration="2" complete="0" thirdDate="2023-05-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        </task>
+        <task id="62" uid="4e53b3a94a37468eab6a4849bffd2371" name="Final Submission" color="#666666" meeting="true" start="2023-09-08" duration="0" complete="0" thirdDate="2023-06-03" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Liam" function="SoftwareDevelopment:2" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
